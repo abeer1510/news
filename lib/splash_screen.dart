@@ -31,9 +31,9 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Spacer(),
-            Image(image: AssetImage(isDarkMode?"assets/images/splash1.png":'assets/images/splash.png')),
+            Image(image: AssetImage(isDarkMode?"assets/images/splash_dark.png":'assets/images/splash_light.png')),
             Spacer(),
-            Image(image: AssetImage(isDarkMode?"assets/images/pranding.png":'assets/images/pranding1.png'),),
+            Image(image: AssetImage(isDarkMode?"assets/images/pranding_dark.png":'assets/images/pranding_light.png'),),
           ],
         ),
       ),
