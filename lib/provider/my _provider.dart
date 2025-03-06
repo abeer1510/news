@@ -2,12 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MyProvider extends ChangeNotifier{
-  ThemeMode themeMode= ThemeMode.light;
-  changeTheme(){
-    if (themeMode == ThemeMode.light){
-      themeMode=ThemeMode.dark;
-    } else{
-      themeMode=ThemeMode.light;}
+  bool isDarkMode = false;
+  ThemeMode get themeMode => isDarkMode ? ThemeMode.dark : ThemeMode.light;
+  void toggleTheme(bool isDark) {
+    isDarkMode = isDark;
     notifyListeners();
   }
 

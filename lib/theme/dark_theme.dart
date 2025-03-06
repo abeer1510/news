@@ -19,10 +19,13 @@ class DarkTheme extends BaseTheme{
   @override
   ThemeData get themeData => ThemeData(
       primaryColor: primaryColor,
-      scaffoldBackgroundColor: backgroundColor,
+    cardColor: textColor,
+    canvasColor: backgroundColor,
+    scaffoldBackgroundColor: backgroundColor,
       appBarTheme: AppBarTheme(
         centerTitle: true,
         backgroundColor: backgroundColor,
+        iconTheme: IconThemeData(color: textColor),
       ),
 
       textTheme: TextTheme(
@@ -41,7 +44,9 @@ class DarkTheme extends BaseTheme{
           fontWeight: FontWeight.w500,
           color: textColor,
         ),
-      )
+      ),
+
+
   );
 
 

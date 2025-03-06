@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:news/home_screen.dart';
+import 'package:news/screens/home_screen.dart';
 import 'package:news/provider/my%20_provider.dart';
-import 'package:news/splash_screen.dart';
+import 'package:news/screens/splash_screen.dart';
 import 'package:news/theme/dark_theme.dart';
 import 'package:news/theme/light_theme.dart';
 import 'package:news/theme/theme.dart';

@@ -20,8 +20,11 @@ class LightTheme extends BaseTheme{
   ThemeData get themeData => ThemeData(
       primaryColor: primaryColor,
       scaffoldBackgroundColor: backgroundColor,
+      cardColor: textColor,
+      canvasColor: backgroundColor,
       appBarTheme: AppBarTheme(
         centerTitle: true,
+        iconTheme: IconThemeData(color: textColor),
         backgroundColor: backgroundColor,
       ),
 
@@ -41,8 +44,8 @@ class LightTheme extends BaseTheme{
           fontWeight: FontWeight.w500,
           color: textColor,
         ),
-      )
-  );
+      ),
+      );
 
 
 }
